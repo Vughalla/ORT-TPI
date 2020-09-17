@@ -1,0 +1,23 @@
+
+Se tiene un club que tiene una lista de socios.
+      (clase club con arrayList de socios)
+
+De cada socio se tiene su nombre, el valor de su cuota y un array
+que tiene para cada mes el valor de cuota y su saldo pendiente.
+      (clase socio tiene array de enteros o double )
+
+Cuando se carga un pago de un socio, se recibe el nombre del mismo y
+si el socio existe, se imputa el importe recibido a cada una de las cuotas
+pendientes, comenzando por la más antigua.
+
+De cada socio se puede ver un detalle de su deuda mostrando para cada 
+cuota pendiente, el número de mes y el importe que se adeuda (para los
+que tengan el valor de la segunda columna mayor a cero)
+            
+El club puede agregar socios (verificando que no existan antes), 
+cargar pagos y pedir el detalle de la deuda
+de un socio en particular (en ambos casos de socios que existan).
+
+
+En la clase Test se debería agregar socios, cargar pagos y consultar la deuda
+de un socio.
