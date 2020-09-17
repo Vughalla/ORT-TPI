@@ -15,7 +15,7 @@ public class Cine {
 	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	
+/*
 	public void procesarEntradas(ArrayList<Entrada> entradas){
 		if(checkFuncion(entradas)) {
 			buscarFuncion();
@@ -29,6 +29,7 @@ public class Cine {
 		}
 	}
 	
+
 	private Funcion checkFuncion(ArrayList<Entrada> entradas) {
 		int i = 0;;
 		boolean entradasValidas = false;
@@ -44,7 +45,7 @@ public class Cine {
 		
 		return entradasValidas;
 	}
-	
+*/
 	private Funcion buscarFuncion(String dia, String hora) {
 		Funcion funcionExistente = null;
 		int j = 0;
@@ -64,7 +65,8 @@ public class Cine {
 		Funcion funcionEncontrada = null;
 		int i = 0;
 		while (funcionEncontrada == null && i < entradas.size()) {
-			if ()
+			
+			
 		}
 		
 		return funcionEncontrada;

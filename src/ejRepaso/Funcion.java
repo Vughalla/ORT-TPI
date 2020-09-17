@@ -1,10 +1,10 @@
 package ejRepaso;
-import java.util.ArrayList;
+
 
 public class Funcion {
 	private String dia;
 	private String horaInicio;
-	private ArrayList<Asiento> asientos;
+	private Asiento asientos[][];
 	
 	/**
 	 * Constructor de la clase Funcion.
@@ -14,8 +14,7 @@ public class Funcion {
 	public Funcion(String dia, String horaInicio) {
 		setDia(dia);
 		setHoraInicio(horaInicio);
-		asientos = new ArrayList<Asiento>();
-		crearAsientos(asientos);
+		crearAsientos();
 	}
 
 	/**
@@ -34,11 +33,11 @@ public class Funcion {
 		this.horaInicio = horaInicio;
 	}
 
-	private void crearAsientos(ArrayList<Asiento> asientos) {
+	private void crearAsientos() {
 		for(char letra='a'; letra<='k'; letra++) {
-			for (int i=1; i<=20; i++) {
-				Asiento asiento = new Asiento(i,letra);
-				asientos.add(asiento);
+			for (int i=0; i<=19; i++) {
+				asientos[0][0] = new Asiento(letra,i);
+				
 			}
 		}
 	}
