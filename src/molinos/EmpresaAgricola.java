@@ -2,6 +2,7 @@ package molinos;
 
 import java.util.ArrayList;
 public class EmpresaAgricola {
+	@SuppressWarnings("unused")
 	private String nombre;
 	private ArrayList<Cosecha> cosechas;
 	private String[] columnas;
